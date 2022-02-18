@@ -5,12 +5,14 @@ import {
   Routes,
   Route
 } from 'react-router-dom';
+import MainSection from '../src/components/MainSection';
 
 function App() {
   return (
     <>
       <Router>
         <Navbar />
+        <MainSection />
         <Routes>
           <Route path='/' />
         </Routes>

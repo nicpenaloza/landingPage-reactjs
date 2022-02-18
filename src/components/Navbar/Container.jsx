@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Button from '../Button/Button';
 import './style.css';
@@ -25,13 +25,17 @@ export default function Container() {
     }
   }
 
+  useEffect(() => {
+    showButton();
+  }, [])
+
   window.addEventListener('resize', showButton);
 
   return (
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link to='/' className='navbar-logo'>
+          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
             <h1>DESIGN</h1>
           </Link>
           <div className='menu-icon' onClick={handleClick}>
