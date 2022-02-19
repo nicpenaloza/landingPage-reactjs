@@ -21,17 +21,34 @@ video {
 }
 
 .mainsection-container {
-    /* height: 100vh; */
+    height: 92vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.mainsection-btn {
+    margin-top: 40px;
 }
 
 .text {
     color: white;
 }
 
+.main-text {
+    font-size: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
 .title {
-    font-size: 120px;
+    font-size: 130px;
+}
+
+.emphasis {
+    font-weight: 600;
 }

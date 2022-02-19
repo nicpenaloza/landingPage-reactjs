@@ -8,8 +8,11 @@ export default function Container() {
       <video src='/videos/video.mp4' autoPlay loop muted />
       <div className='mainsection-container'>
         <h1 className='text title'>Welcome</h1>
-        <p className='text'>We are EPSILON the best technological solution on the market</p>
-        <div className='mainsection-btns'>
+        <p className='text main-text text-center'>
+          We are <span className='emphasis'>EPSILON</span> the best technological solution on the market. <br/>
+          Our mission is to provide solutions to society through science and innovation.
+        </p>
+        <div className='mainsection-btn'>
           <Button
             buttonStyle='btn--outline'
             buttonSize='btn--large'

@@ -40,7 +40,7 @@ export default function Button({
     const btnSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
     return (
-        <Link to='/sign-up' className='btn-mobile'>
+        <Link to='/contact' className='btn-mobile'>
             <button
                 className={`btn ${btnStyle} ${btnSize}`}
                 onClick={onClick}
