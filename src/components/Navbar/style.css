@@ -91,10 +91,11 @@
         left: -100%;
         opacity: 1;
         transition: all 0.5s ease;
+        justify-content: flex-start;
     }
 
     .nav-menu.active {
-        background: #242222;
+        background: black;
         left: 0;
         opacity: 1;
         transition: all 0.5s ease;
@@ -116,9 +117,9 @@
 
     .navbar-logo {
         position: absolute;
-        top: 0;
+        /* top: 0;
         left: 0;
-        transform: translate(25%, 50%);
+        transform: translate(25%, 50%); */
     }
 
     .menu-icon {
@@ -141,7 +142,7 @@
         text-align: center;
         margin: 2rem auto;
         border-radius: 4px;
-        width: 80%;
+        width: 60%;
         text-decoration: none;
         font-size: 1.5rem;
         background-color: transparent;
