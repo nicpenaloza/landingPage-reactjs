@@ -36,7 +36,7 @@ export default function Container() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            <h1>DESIGN</h1>
+            <h1>EPSILON</h1>
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'}></i>
@@ -54,17 +54,17 @@ export default function Container() {
             </Link>
           </li>
           <li className='nav-item'>
-            <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
-              Contact
+            <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>
+              Projects
             </Link>
           </li>
           <li className='nav-item'>
-            <Link to='/sign-up' className='nav-links-mobile' onClick={closeMobileMenu}>
-              Sign Up
+            <Link to='/contact' className='nav-links-mobile' onClick={closeMobileMenu}>
+              CONTACT
             </Link>
           </li>
         </ul>
-        {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+        {button && <Button buttonStyle='btn--outline'>CONTACT</Button>}
       </nav>
     </>
   )
