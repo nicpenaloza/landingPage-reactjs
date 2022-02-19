@@ -5,16 +5,15 @@ import {
   Routes,
   Route
 } from 'react-router-dom';
-import MainSection from '../src/components/MainSection';
+import Home from '../src/components/pages/Home';
 
 function App() {
   return (
     <>
       <Router>
         <Navbar />
-        <MainSection />
         <Routes>
-          <Route path='/' />
+          <Route path='/' element={<Home/>}/>
         </Routes>
       </Router>
     </>
